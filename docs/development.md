@@ -18,6 +18,9 @@
     * `auto_solve.sh` bash script that tests challenge functionality. This script is automatically imported by the root [run_tests.sh](./../run_tests.sh) script and is executed from the hackerlab container. The script should ideally perform all required steps to solve all tasks and submit the flags in the dashboard via an API.
     * optional other source code, data or docker files for the challenge
 
+* Recreate the dockers so the dashboard has the new challenge
+    * `docker compose up --force-recreate`
+
 ## How to add a new class environment
 
 * Create a new class directory in the [/classes](./../classes/) directory
@@ -43,7 +46,7 @@
 | playground-net | `172.20.0.5`  | Challenge [Hello world](./../challenges/hello-world/)       |
 | playground-net | `172.20.0.10` | Challenge [Famous Quotes LFI](./../challenges/famous-quotes-lfi/) |
 | playground-net | `172.20.0.30` | Challenge [What's the date?](./../challenges/what-is-the-date/) |
- | playground-net | `172.20.0.88` | [Class01](./../classes/class01)                             |                                                
+| playground-net | `172.20.0.88` | [Class01](./../classes/class01)                             |                                                
 
 ## Testing
 
